@@ -19,7 +19,7 @@ Type "copyright", "credits" or "license()" for more information.
 				raise ValueError("negatives not allowed")
 			print(x)
 		except:
-        		print("Character that you have inserted is not a number")
+        		print("The sum of the numbers inserted is "+str(x))
 	if len(num)>2:
 		while i<len(num):
 			try:
@@ -44,7 +44,7 @@ Type "copyright", "credits" or "license()" for more information.
 				if j==True:
 					x/=10
 				if y<0:
-					print(int(y))
+					print(y)
 					y=0
 				j=False
 				z=False
@@ -57,10 +57,63 @@ Type "copyright", "credits" or "license()" for more information.
 				y+=x
 				x=0
 				continue
-		if x>1000:
-			x=0
 		y+=x
-		x=int(y)
-		if y==0:
-			print("Characters that you have inserted are not poitive numbers")
-		else: print(x)
+		y=int(y)
+		x=y
+		print("The sum of the numbers inserted is "+str(x))
+
+		
+>>> add()
+Please put in a number then press Enter then Ctrl-D: 
+The sum of the numbers inserted is 0
+>>> add()
+Please put in a number then press Enter then Ctrl-D: 
+1
+The sum of the numbers inserted is 1
+>>> add()
+Please put in a number then press Enter then Ctrl-D: 
+1,2
+The sum of the numbers inserted is 3
+>>> add()
+Please put in a number then press Enter then Ctrl-D: 
+1,2,3,4,5
+The sum of the numbers inserted is 15
+>>> add()
+Please put in a number then press Enter then Ctrl-D: 
+1
+2
+3
+4
+The sum of the numbers inserted is 10
+>>> add()
+Please put in a number then press Enter then Ctrl-D: 
+-1
+You have entered a negative number: 
+-1
+The sum of the numbers inserted is 0
+>>> add()
+Please put in a number then press Enter then Ctrl-D: 
+-1-2,-8
+You have entered a negative number: 
+-1
+You have entered a negative number: 
+-2
+You have entered a negative number: 
+-8
+The sum of the numbers inserted is 0
+>>> add()
+Please put in a number then press Enter then Ctrl-D: 
+500001
+The sum of the numbers inserted is 0
+>>> add()
+Please put in a number then press Enter then Ctrl-D: 
+//[***]\n1***2***3
+The sum of the numbers inserted is 6
+>>> add()
+Please put in a number then press Enter then Ctrl-D: 
+//[*][%]\n1*2%3
+The sum of the numbers inserted is 6
+>>> add()
+Please put in a number then press Enter then Ctrl-D: 
+//[***/][%%%+§]\n1***/2%%%+§3
+The sum of the numbers inserted is 6
