@@ -57,6 +57,8 @@ Type "copyright", "credits" or "license()" for more information.
 				y+=x
 				x=0
 				continue
+		if x>1000:
+			x=0
 		y+=x
 		y=int(y)
 		x=y
