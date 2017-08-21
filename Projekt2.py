@@ -1,5 +1,6 @@
 Python 3.6.2 (v3.6.2:5fd33b5, Jul  8 2017, 04:14:34) [MSC v.1900 32 bit (Intel)] on win32
 Type "copyright", "credits" or "license()" for more information.
+>>> import sys
 >>> def add ():
 	i=0
 	j=True
@@ -15,8 +16,8 @@ Type "copyright", "credits" or "license()" for more information.
 		try:
 			x=int(num)
 			if x<0:
+				print("You have entered a negative number " + x)
 				raise ValueError("negatives not allowed")
-			print(x)
 		except:
         		print("Character that you have inserted is not a number")
 	if len(num)>2:
