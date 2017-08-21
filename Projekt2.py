@@ -1,13 +1,15 @@
 Python 3.6.2 (v3.6.2:5fd33b5, Jul  8 2017, 04:14:34) [MSC v.1900 32 bit (Intel)] on win32
 Type "copyright", "credits" or "license()" for more information.
 >>> import sys
->>> def add (num):
+>>> def add ():
 	i=0
 	j=True
 	x=0
 	y=0
 	z=False
 	w='-'
+	print ("Please put in a number then press Enter then Ctrl-D: ")
+	num=str(sys.stdin.readlines())
 	if len(num)==0:
 		print("0")
 	if len(num)<3:
